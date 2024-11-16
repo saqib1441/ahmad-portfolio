@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  @apply w-[90%] mx-auto md:w-[85%] lg:w-[80%];
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px !important;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #6e57e0 !important;
+}
